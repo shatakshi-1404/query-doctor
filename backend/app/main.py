@@ -30,7 +30,7 @@ app = FastAPI(title="QueryDoctor", version="0.1.0", lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173","https://query-doctor.onrender.com/",
+    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173","https://query-doctor-tau.vercel.app/",
         ],
     allow_methods=["GET", "POST"],
     allow_headers=["Content-Type"],
